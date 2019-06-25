@@ -17,7 +17,6 @@
  *
  */
 
-
 #ifndef COMMON_INCLUDE_H
 #define COMMON_INCLUDE_H
 
@@ -36,7 +35,7 @@ using Sophus::SE3;
 #include <opencv2/core/core.hpp>
 using cv::Mat;
 
-// std 
+// std
 #include <vector>
 #include <list>
 #include <memory>
@@ -46,5 +45,5 @@ using cv::Mat;
 #include <unordered_map>
 #include <map>
 
-using namespace std; 
+using namespace std;
 #endif

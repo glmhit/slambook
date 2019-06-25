@@ -1,17 +1,17 @@
-#To build the code : 
-mkdir build
+#To build the code :   
+mkdir build  
 
-cd ./build
+cd ./build  
 
-cmake ..
+cmake ..  
 
-make
+make  
 
-#How to run the code :
+#How to run the code :  
 
-cd ./build
+cd ./build  
 
-./ceres_customBundle -input ../data/problem-.....txt
+./ceres_customBundle -input ../data/problem-.....txt  
 
-#see more detail settings by :
-./ceres_customBundle -help
+#see more detail settings by :  
+./ceres_customBundle -help  

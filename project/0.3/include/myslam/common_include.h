@@ -17,7 +17,6 @@
  *
  */
 
-
 #ifndef COMMON_INCLUDE_H
 #define COMMON_INCLUDE_H
 
@@ -31,14 +30,14 @@ using Eigen::Vector3d;
 // for Sophus
 #include <sophus/se3.h>
 #include <sophus/so3.h>
-using Sophus::SO3;
 using Sophus::SE3;
+using Sophus::SO3;
 
 // for cv
 #include <opencv2/core/core.hpp>
 using cv::Mat;
 
-// std 
+// std
 #include <vector>
 #include <list>
 #include <memory>
@@ -48,5 +47,5 @@ using cv::Mat;
 #include <unordered_map>
 #include <map>
 
-using namespace std; 
+using namespace std;
 #endif

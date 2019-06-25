@@ -44,7 +44,9 @@ int main(int argc, char** argv)
           cv::FastFeatureDetector::create();
       detector->detect(color, kps);
       for (auto kp : kps)
+      {
         keypoints.push_back(kp.pt);
+      }
       last_color = color;
       continue;
     }
@@ -54,7 +56,9 @@ int main(int argc, char** argv)
     vector<cv::Point2f> next_keypoints;
     vector<cv::Point2f> prev_keypoints;
     for (auto kp : keypoints)
+    {
       prev_keypoints.push_back(kp);
+    }
     vector<unsigned char> status;
     vector<float> error;
     chrono::steady_clock::time_point t1 = chrono::steady_clock::now();
@@ -85,9 +89,11 @@ int main(int argc, char** argv)
     // 画出 keypoints
     cv::Mat img_show = color.clone();
     for (auto kp : keypoints)
+    {
       cv::circle(img_show, kp, 10, cv::Scalar(0, 240, 0), 1);
+    }
     cv::imshow("corners", img_show);
-    cv::waitKey(0);
+    cv::waitKey(0);  // 按任意键继续
     last_color = color;
   }
   return 0;

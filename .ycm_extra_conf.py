@@ -80,7 +80,16 @@ flags = [
 '-isystem', '/usr/include/pcl-1.7',
 '-isystem', '/opt/ros/kinetic/include',
 '-isystem', '/usr/include/opencv2',
-'-iquote','.',
+'-iquote','./ch2',
+'-iquote','./ch3',
+'-iquote','./ch4',
+'-iquote','./ch5',
+'-iquote','./ch6',
+'-iquote','./ch7',
+'-iquote','./ch8',
+'-iquote','./ch10',
+'-iquote','./ch11',
+'-iquote','./ch12',
 '-iquote','./3rdparty',
 ]
 

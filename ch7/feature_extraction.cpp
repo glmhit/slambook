@@ -57,9 +57,13 @@ int main(int argc, char** argv)
   {
     double dist = matches[i].distance;
     if (dist < min_dist)
+    {
       min_dist = dist;
+    }
     if (dist > max_dist)
+    {
       max_dist = dist;
+    }
   }
 
   // 仅供娱乐的写法
@@ -95,7 +99,10 @@ int main(int argc, char** argv)
               img_goodmatch);
   imshow("match points", img_match);
   imshow("opt match points", img_goodmatch);
-  waitKey(0);
-
+  int key = waitKey(0);
+  while (key != 27)  // 'esc'
+  {
+    key = waitKey(0);
+  }
   return 0;
 }
